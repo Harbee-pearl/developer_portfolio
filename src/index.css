@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-item {
+  @apply font-bold text-lg text-black mb-4 md:mr-5 md:mb-0 active:text-blue;
+}
+
+.input {
+  @apply bg-offwhite rounded w-full py-3 px-4 placeholder:text-black focus:outline-none;
+}
+
+.blue-button {
+  @apply bg-blue text-white font-bold text-sm md:text-lg lg:text-xl rounded-md py-3 px-12 uppercase shadow-customOne;
+}
